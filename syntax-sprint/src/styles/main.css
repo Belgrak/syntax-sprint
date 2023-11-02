@@ -1,0 +1,22 @@
+.wrapper{
+    margin: 0 5%;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.text, .text-field{
+    font-size: 2vmin;
+}
+
+.text{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 50%;
+}
+
+.text-field{
+    text-align: center;
+}
