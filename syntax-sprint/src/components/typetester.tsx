@@ -81,7 +81,8 @@ const TypeTester: React.FC = () => {
                 {`${Math.floor(seconds / 60)}:${(seconds % 60 < 10 ? "0" : "") + (seconds % 60).toString()}`}
             </p>
             <div className="input_block" style={{display: "flex"}}>
-                <input value={curInput} type="text" className="text-field" onInput={onChange}/>
+                <input autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} value={curInput}
+                       type="text" className="text-field" onInput={onChange}/>
                 <button onClick={() => window.location.reload()}>🔄</button>
             </div>
         </div>

@@ -43,3 +43,14 @@
         width: 20%;
     }
 }
+
+@media (max-width: 575px) {
+    .text, .timer, .text-field{
+        font-size: 4vmin;
+        font-weight: bold;
+    }
+
+    .text{
+        max-width: 100%;
+    }
+}
