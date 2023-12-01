@@ -6,6 +6,9 @@ on:
     branches: [ main, master ]
 jobs:
   test:
+    defaults:
+      run:
+        working-directory: ./syntax-sprint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -13,8 +16,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 18
-    - name: Move to project directory
-      run: cd syntax-sprint
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
